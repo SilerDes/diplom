@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_login">войти</string>
+    <string name="button_singup">Зарегистрировать</string>
+    <string name="button_apply">Применить</string>
+    <string name="button_create_position">Добавить позицию</string>
+    <string name="button_open_settings">В настройки</string>
+    <string name="button_back">Вернуться назад</string>
+    <string name="button_delete">Удалить</string>
+    <string name="button_put_away">Убрать</string>
+    <string name="button_edit">Редактировать</string>
+    <string name="button_edit_password">Изменить пароль</string>
+    <string name="button_create_session">Создать новую сессию</string>
+    <string name="button_save">Сохранить</string>
+    <string name="button_stop_session">Завершить сессию</string>
+    <string name="button_update">Обновить</string>
+    <string name="send_data">Отправить отчет</string>
+    <string name="button_retry">Повторить</string>
+    <string name="button_next">Далее</string>
+    <string name="button_finish_session_configure">Завершить конфигурацию</string>
+    <string name="button_pick">Выбрать</string>
+</resources>

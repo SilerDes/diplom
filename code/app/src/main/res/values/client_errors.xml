@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_error_400_bad_request">Не удалось выполнить запрос, так как данные не актуальны</string>
+    <string name="server_error_403_api_key">Ведутся технические работы, повторите запрос позже</string>
+    <string name="server_error_403_status">На выполнение данного запроса у вас не достаточно прав</string>
+    <string name="server_error_403_availability_title">Позиция с таким наименованием уже существует</string>
+    <string name="server_error_404">Пользователя с таким кодом не существует</string>
+    <string name="server_error_404_position">Такой позиции не существует</string>
+    <string name="server_error_404_self">Ваш профиль больше не актуален</string>
+    <string name="server_error_410_employee_deletion">Такой профиль пользователя уже удален</string>
+    <string name="server_error_410_position_deletion">Такая позиция уже удалена</string>
+    <string name="server_error_410_inventory_item_deletion">Эта позиция больше не актуальна</string>
+    <string name="server_error_410_session_deletion">Эта сессия больше не актуальна</string>
+    <string name="server_error_401">Введен неверный пароль</string>
+    <string name="server_error_409">Пользователь с таким кодом сотрудника уже существует</string>
+    <string name="server_error_409_session_finished">Эта сессия уже завершена</string>
+    <string name="server_error_423">Запрос заблокирован</string>
+</resources>

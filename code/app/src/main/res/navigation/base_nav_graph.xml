@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kazbekov.invent.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragmentTrusted"
+            app:destination="@id/mainFragmentTrusted"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_loginFragment_to_sessionListFragment"
+            app:destination="@id/sessionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragmentTrusted"
+        android:name="com.kazbekov.invent.main.trusted_user.MainFragmentTrusted"
+        android:label="MainFragmentTrusted"
+        tools:layout="@layout/fragment_main_trusted">
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_createEmployeeFragment"
+            app:destination="@id/createEmployeeFragment" />
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_searchEmployeeFragment"
+            app:destination="@id/searchEmployeeFragment" />
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_createInventoryPosition"
+            app:destination="@id/createInventoryPosition" />
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_inventoryPositionListFragment"
+            app:destination="@id/inventoryPositionListFragment" />
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_sessionListFragment"
+            app:destination="@id/sessionListFragment" />
+        <action
+            android:id="@+id/action_mainFragmentTrusted_to_createSessionFragment"
+            app:destination="@id/createSessionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createEmployeeFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.creation.CreateEmployeeFragment"
+        android:label="CreateEmployeeFragment"
+        tools:layout="@layout/fragment_create_employee" />
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.list.EmployeeListFragment"
+        android:label="EmployeeListFragment"
+        tools:layout="@layout/fragment_employee_list">
+        <action
+            android:id="@+id/action_employeeListFragment_to_filterDialogFragment"
+            app:destination="@id/filterDialogFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_employeeCardFragment"
+            app:destination="@id/employeeCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchEmployeeFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.search.SearchEmployeeFragment"
+        android:label="SearchEmployeeFragment"
+        tools:layout="@layout/fragment_search_employee">
+        <action
+            android:id="@+id/action_searchEmployeeFragment_to_deleteEmployeeDialogFragment"
+            app:destination="@id/deleteEmployeeDialogFragment" />
+        <action
+            android:id="@+id/action_searchEmployeeFragment_to_modifyEmployeeFragment"
+            app:destination="@id/modifyEmployeeFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/filterDialogFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.list.filter.FilterDialogFragment"
+        android:label="FilterDialogFragment">
+        <argument
+            android:name="flags"
+            app:argType="com.kazbekov.invent.main.trusted_user_and_admin.employee.list.filter.FilterWrapper" />
+    </dialog>
+    <fragment
+        android:id="@+id/createInventoryPosition"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.creation.CreateInventoryPosition"
+        android:label="CreateInventoryPosition"
+        tools:layout="@layout/fragment_create_inventory_position" />
+    <fragment
+        android:id="@+id/inventoryPositionListFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.list.InventoryPositionListFragment"
+        android:label="InventoryPositionListFragment"
+        tools:layout="@layout/fragment_inventory_position_list" >
+        <action
+            android:id="@+id/action_inventoryPositionListFragment_to_inventoryPositionCard"
+            app:destination="@id/inventoryPositionCard" />
+    </fragment>
+    <dialog
+        android:id="@+id/deleteEmployeeDialogFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.deletion.DeleteEmployeeDialogFragment"
+        android:label="DeleteEmployeeDialogFragment"
+        tools:layout="@layout/dialog_fragment_delete_employee" >
+        <argument
+            android:name="code"
+            app:argType="integer" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/modifyEmployeeFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.modification.ModifyEmployeeFragment"
+        android:label="ModifyEmployeeFragment"
+        tools:layout="@layout/fragment_modify_employee">
+        <argument
+            android:name="code"
+            app:argType="integer" />
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+        <argument
+            android:name="second_name"
+            app:argType="string" />
+        <argument
+            android:name="status"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeCardFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.employee.card.EmployeeCardFragment"
+        android:label="EmployeeCardFragment"
+        tools:layout="@layout/fragment_employee_card">
+        <argument
+            android:name="code"
+            app:argType="integer" />
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+        <argument
+            android:name="second_name"
+            app:argType="string" />
+        <argument
+            android:name="status"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_employeeCardFragment_to_modifyEmployeeFragment"
+            app:destination="@id/modifyEmployeeFragment" />
+        <action
+            android:id="@+id/action_employeeCardFragment_to_deleteEmployeeDialogFragment"
+            app:destination="@id/deleteEmployeeDialogFragment" />
+        <argument
+            android:name="statusId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryPositionCard"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.card.InventoryPositionCardFragment"
+        android:label="InventoryPositionCard"
+        tools:layout="@layout/fragment_inventory_position">
+        <argument
+            android:name="image_link"
+            app:argType="string" />
+        <argument
+            android:name="title_official"
+            app:argType="string" />
+        <argument
+            android:name="title_user"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_inventoryPositionCard_to_modifyInventoryPositionFragment"
+            app:destination="@id/modifyInventoryPositionFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="positionId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_inventoryPositionCard_to_deletePositionDialogFragment"
+            app:destination="@id/deletePositionDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifyInventoryPositionFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.modification.ModifyInventoryPositionFragment"
+        android:label="ModifyInventoryPositionFragment"
+        tools:layout="@layout/fragment_modify_position">
+        <argument
+            android:name="titleOfficial"
+            app:argType="string" />
+        <argument android:name="titleUser" />
+        <argument
+            android:name="positionId"
+            app:argType="integer" />
+    </fragment>
+    <dialog
+        android:id="@+id/deletePositionDialogFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.deletion.DeletePositionDialogFragment"
+        android:label="DeletePositionDialogFragment"
+        tools:layout="@layout/dialog_fragment_delete_position">
+        <argument
+            android:name="positionId"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/sessionListFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.session.list.SessionListFragment"
+        android:label="SessionListFragment"
+        tools:layout="@layout/fragment_session_list">
+        <argument
+            android:name="listType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sessionListFragment_to_userInventoryFragment"
+            app:destination="@id/userInventoryFragment" />
+        <action
+            android:id="@+id/action_sessionListFragment_to_adminInventoryFragment"
+            app:destination="@id/adminInventoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInventoryFragment"
+        android:name="com.kazbekov.invent.main.user.UserInventoryFragment"
+        android:label="UserInventoryFragment"
+        tools:layout="@layout/fragment_user_inventory">
+        <argument
+            android:name="sessionId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminInventoryFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_item.AdminInventoryFragment"
+        android:label="AdminInventoryFragment"
+        tools:layout="@layout/fragment_admin_inventory">
+        <argument
+            android:name="session"
+            app:argType="com.kazbekov.invent.main.data.session.RemoteSession" />
+        <action
+            android:id="@+id/action_adminInventoryFragment_to_deleteInventoryItemDialogFragment"
+            app:destination="@id/deleteInventoryItemDialogFragment" />
+        <action
+            android:id="@+id/action_adminInventoryFragment_to_deleteSessionDialogFragment"
+            app:destination="@id/deleteSessionDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/deleteInventoryItemDialogFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_item.deletion.DeleteInventoryItemDialogFragment"
+        android:label="DeleteInventoryItemDialogFragment" >
+        <argument
+            android:name="itemId"
+            app:argType="integer" />
+        <argument
+            android:name="stateId"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/deleteSessionDialogFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.session.deletion.DeleteSessionDialogFragment"
+        android:label="DeleteSessionDialogFragment" >
+        <argument
+            android:name="sessionId"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/createSessionFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.session.create.CreateSessionFragment"
+        android:label="CreateSessionFragment"
+        tools:layout="@layout/fragment_create_session">
+        <action
+            android:id="@+id/action_createSessionFragment_to_sessionConfigureEmployeeFragment"
+            app:destination="@id/sessionConfigureEmployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionConfigureEmployeeFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.session.configure.employee.SessionConfigureEmployeeFragment"
+        android:label="SessionConfigureEmployeeFragment"
+        tools:layout="@layout/fragment_session_configure_employee">
+        <argument
+            android:name="sessionId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_sessionConfigureEmployeeFragment_to_sessionConfigurePositionFragment"
+            app:destination="@id/sessionConfigurePositionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionConfigurePositionFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.session.configure.position.SessionConfigurePositionFragment"
+        android:label="SessionConfigurePositionFragment"
+        tools:layout="@layout/fragment_session_configure_position">
+        <argument
+            android:name="employees"
+            app:argType="com.kazbekov.invent.main.data.antoher.EmployeeListWrapper" />
+        <argument
+            android:name="sessionId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_sessionConfigurePositionFragment_to_pickPositionsBottomDialogFragment"
+            app:destination="@id/pickPositionsBottomDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/pickPositionsBottomDialogFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.session.configure.position.PickPositionsBottomDialogFragment"
+        android:label="PickPositionsBottomDialogFragment"
+        tools:layout="@layout/bottom_dialog_fragment_pick_positions">
+        <argument
+            android:name="employee2positions"
+            app:argType="com.kazbekov.invent.main.data.antoher.Employee2PositionsWrapper" />
+        <argument
+            android:name="stateId"
+            app:argType="integer" />
+        <argument
+            android:name="needRequestPositions"
+            app:argType="boolean" />
+    </dialog>
+</navigation>

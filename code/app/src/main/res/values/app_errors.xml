@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_input_code_null">Поле «Код» не может быть пустым</string>
+    <string name="error_input_password_blank">Поле «Пароль» не может быть пустым</string>
+    <string name="error_incorrect_input_code">Введен некорректный код сотрудника</string>
+    <string name="combinate_input_error">Поля «Код» и «Пароль» не могут быть пустыми</string>
+    <string name="error_input_first_name_blank">Поле «Имя» не может быть пустым</string>
+    <string name="error_input_second_name_blank">Поле «Фамилия» не может быть пустым</string>
+    <string name="error_incorrect_query_for_search">Нельзя выполнить поиск с таким запросом</string>
+    <string name="error_input_official_title_blank">Поле «Официальное наименование» не может быть пустым</string>
+    <string name="error_input_non_official_title_blank">Поле «Упрощенное наименование» не может быть пустым</string>
+    <string name="error_input_official_and_non_official_title_blank">Все поля должны быть заполнены</string>
+    <string name="error_permission_denied">Для фото, приложению требуется разрешение на камеру</string>
+    <string name="error_invalid_search_value">Нельзя выполнить поиск с таким запросом</string>
+    <string name="error_request_already_in_progress">Сейчас уже выполняется один запрос</string>
+    <string name="error_cannot_share_report">Не удалось сформировать отчет. Проверьте актуальность сессии</string>
+    <string name="error_report_is_empty">Не удалось сформировать отчет. Массив данных пуст</string>
+    <string name="error_cannot_create_session">Не удалось создать сессию</string>
+    <string name="error_negative_item_count">Количество инвентарных позиций не может быть меньше нуля</string>
+</resources>

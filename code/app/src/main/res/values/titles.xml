@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_singup">Регистрация сотрудника</string>
+    <string name="title_invents">Мои Инвентаризации</string>
+    <string name="title_filter_button">Фильтрация результата</string>
+    <string name="title_modify_employee">Редактор профиля</string>
+    <string name="title_modify_position">Редактор позиции</string>
+    <string name="title_save_changes">Сохранить изменения</string>
+    <string name="title_employee_card">Профиль</string>
+    <string name="title_position_card">Карточка позиции</string>
+    <string name="title_photo_ready_to_post">Фото готово к отправке</string>
+    <string name="title_session">Сессия</string>
+    <string name="code_text_view">Код:</string>
+    <string name="name_text_view">Имя:</string>
+    <string name="surname_text_view">Фамилия:</string>
+    <string name="status_text_view">Статус аккаунта:</string>
+    <string name="title_configure_session">Конфигурация сессии</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/inventory_position_card_menu"
+        app:navigationIcon="@drawable/ic_left"
+        app:title="@string/title_position_card"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/inventory_position_preview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/g50h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g50h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/title_official_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hint_title_official"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/g50h" />
+
+    <TextView
+        android:id="@+id/title_official"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_official_text_view"
+        app:layout_constraintTop_toBottomOf="@id/title_official_text_view"
+        tools:text="Ложка серебряная" />
+
+    <TextView
+        android:id="@+id/title_user_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hint_title_non_official"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_official_text_view"
+        app:layout_constraintTop_toBottomOf="@id/title_official" />
+
+    <TextView
+        android:id="@+id/title_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_user_text_view"
+        app:layout_constraintTop_toBottomOf="@id/title_user_text_view"
+        tools:text="Ложка" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/create_employee"
+        android:icon="@drawable/ic_person_add"
+        android:title="@string/create_employee" />
+
+    <item
+        android:id="@+id/employee_list"
+        android:icon="@drawable/ic_persons"
+        android:title="@string/title_get_employee_list" />
+
+    <item
+        android:id="@+id/find_employee"
+        android:icon="@drawable/ic_person_search"
+        android:title="@string/title_find_employee" />
+
+    <item
+        android:id="@+id/create_inventory_position_item"
+        android:icon="@drawable/ic_add_position"
+        android:title="@string/title_create_inventory_position" />
+
+    <item android:id="@+id/inventory_position_list"
+        android:icon="@drawable/ic_positions"
+        android:title="@string/title_get_inventory_position_list"/>
+
+</menu>

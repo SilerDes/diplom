@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <include
+        android:id="@+id/included_progress_bar"
+        layout="@layout/view_progress_bar"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_warning"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/warning_delete_inventory_item"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/check_box_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/primary"
+        android:text="@string/check_box_agree" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/button_delete" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trusted_status_user_full">Пользователь (по умолчанию)</string>
+    <string name="trusted_status_user_remote">Пользователь</string>
+    <string name="trusted_status_admin_remote">Администратор</string>
+    <string name="trusted_status_god">Доверенный аккаунт</string>
+    <string name="trusted_status_god_remote">Доверенный аккаунт</string>
+</resources>

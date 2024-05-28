@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_search_employee">Поиск сотрудника производится только по атрибуту «Код сотрудника» </string>
+    <string name="info_add_image">Добавьте фотографию для этой инвентарной позиции</string>
+    <string name="info_take_photo_button">Сделать фото</string>
+    <string name="info_pick_photo_button">Выбрать фото</string>
+    <string name="check_box_agree">Я ознакомлен и согласен</string>
+    <string name="info_employee_deleted">Этот профиль удален</string>
+    <string name="title_session_id">Идентификатор сессии:</string>
+    <string name="title_created_by">Открыл(-а):</string>
+    <string name="title_session_started">Начало:</string>
+    <string name="title_session_finished">Конец:</string>
+    <string name="title_all_sessions">Все Сессии</string>
+    <string name="title_all_sessions_caps">ВСЕ СЕССИИ</string>
+    <string name="title_sessions_for_me">Включенные Сессии</string>
+    <string name="title_sessions_for_me_caps">ВКЛЮЧЕННЫЕ СЕССИИ</string>
+    <string name="title_session_not_finished_yet">Не завершена</string>
+    <string name="title_in_progress">Обновляем…</string>
+    <string name="title_inventory_session_report">Отчет по сессии</string>
+    <string name="on_load_text">Обновляем…</string>
+    <string name="title_configure_positions">Установите инвентарные позиции для каждого выбранного сотрудника</string>
+    <string name="title_available_positions">Доступные позиции</string>
+    <string name="title_selected_positions">Выбранные позиции</string>
+</resources>

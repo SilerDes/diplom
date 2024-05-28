@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_created">Пользователь успешно добавлен</string>
+    <string name="inventory_position_created">Позиция успешно добавлена</string>
+    <string name="employee_deleted">Сотрудник удален</string>
+    <string name="employee_updated">Данные сотрудника обновлены</string>
+    <string name="inventory_position_updated">Позиция успешно обновлена</string>
+    <string name="inventory_position_deleted">Позиция удалена</string>
+    <string name="inventory_item_updated">Данные успешно обновлены</string>
+    <string name="session_deleted">Сессия удалена</string>
+    <string name="session_successfully_configured">Сессия успешно сконфигурирована</string>
+</resources>

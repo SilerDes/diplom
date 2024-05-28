@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/child_nav_graph"
+    app:startDestination="@id/fillHeadingsFragment"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/fillHeadingsFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.creation.titles.FillHeadingsFragment"
+        android:label="FillHeadingsFragment"
+        tools:layout="@layout/fragment_fill_headings">
+        <action
+            android:id="@+id/action_fillHeadingsFragment_to_addImageFragment"
+            app:destination="@id/addImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addImageFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.creation.image.AddImageFragment"
+        android:label="AddImageFragment"
+        tools:layout="@layout/fragment_add_inventory_position_item">
+        <argument
+            android:name="titleOfficial"
+            app:argType="string" />
+        <argument
+            android:name="titleNonOfficial"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addImageFragment_to_positionPreviewFragment"
+            app:destination="@id/positionPreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/positionPreviewFragment"
+        android:name="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.creation.result.PositionPreviewFragment"
+        android:label="PositionPreviewFragment"
+        tools:layout="@layout/fragment_position_preview">
+        <argument android:name="titleOfficial"
+            app:argType="string" />
+        <argument android:name="titleNonOfficial"
+            app:argType="string" />
+        <argument
+            android:name="imageContent"
+            app:argType="com.kazbekov.invent.main.trusted_user_and_admin.inventory_position.creation.image.ContentUri" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_employee">Добавить нового сотрудника</string>
+    <string name="title_get_employee_list">Все сотрудники</string>
+    <string name="title_find_employee">Поиск сотрудника</string>
+    <string name="title_create_inventory_position">Добавить позицию</string>
+    <string name="title_get_inventory_position_list">Все позиции</string>
+    <string name="title_selected_employee_list">Выбранные сотрудники</string>
+</resources>

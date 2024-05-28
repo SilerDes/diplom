@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_employee_code">Код сотрудника</string>
+    <string name="hint_employee_password">Пароль</string>
+    <string name="hint_employee_first_name">Имя сотрудника</string>
+    <string name="hint_employee_second_name">Фамилия сотрудника</string>
+    <string name="hint_employee_trusted_status">Статус доверия</string>
+    <string name="hint_title_official">Официальное наименование</string>
+    <string name="hint_title_official_crop">Оф. Наим.</string>
+    <string name="hint_title_non_official">Упрощенное наименование</string>
+    <string name="hint_title_non_official_crop">Уп. Наим.</string>
+    <string name="hint_new_password">Новый пароль</string>
+    <string name="hint_all_sessions">Просмотр всех созданных сессий</string>
+    <string name="hint_sessions_for_me">Просмотр всех созданных сессий, в которых Я принимаю участие</string>
+    <string name="hint_inventory_item_counter">1</string>
+</resources>

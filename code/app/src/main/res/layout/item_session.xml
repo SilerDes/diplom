@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title_session_id_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_session_id"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/session_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/title_session_id_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/title_session_id_text_view"
+            app:layout_constraintTop_toTopOf="@id/title_session_id_text_view"
+            tools:text="13" />
+
+        <TextView
+            android:id="@+id/title_created_by_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/title_created_by"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_session_id_text_view" />
+
+        <TextView
+            android:id="@+id/created_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/title_created_by_text_view"
+            app:layout_constraintStart_toEndOf="@id/title_created_by_text_view"
+            app:layout_constraintTop_toTopOf="@id/title_created_by_text_view"
+            tools:text="Ефимов Илья" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/created_by"
+            app:layout_constraintTop_toBottomOf="@id/created_by"
+            tools:text="1199" />
+
+        <TextView
+            android:id="@+id/title_session_started_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/title_session_started"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/code" />
+
+        <TextView
+            android:id="@+id/session_started_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/title_session_started_text_view"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toEndOf="@id/title_session_started_text_view"
+            app:layout_constraintTop_toTopOf="@id/title_session_started_text_view"
+            tools:text="09.04.2024 16:24" />
+
+        <TextView
+            android:id="@+id/title_session_finished_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/title_session_finished"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/title_session_started_text_view" />
+
+        <TextView
+            android:id="@+id/session_finished_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/title_session_finished_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/title_session_finished_text_view"
+            app:layout_constraintTop_toTopOf="@id/title_session_finished_text_view"
+            tools:text="09.04.2024 20:05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

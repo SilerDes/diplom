@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:text="@string/info_add_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/take_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/primary"
+        android:contentDescription="@string/info_take_photo_button"
+        android:src="@drawable/ic_add_a_photo"
+        app:borderWidth="0dp"
+        app:fabCustomSize="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:maxImageSize="48dp"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/take_photo_button_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/info_take_photo_button"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/take_photo_button"
+        app:layout_constraintStart_toStartOf="@id/take_photo_button"
+        app:layout_constraintTop_toBottomOf="@id/take_photo_button" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pick_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary"
+        android:contentDescription="@string/info_pick_photo_button"
+        android:src="@drawable/ic_pick_photo"
+        app:borderWidth="0dp"
+        app:fabCustomSize="100dp"
+        app:layout_constraintEnd_toEndOf="@id/take_photo_button"
+        app:layout_constraintStart_toStartOf="@id/take_photo_button"
+        app:layout_constraintTop_toBottomOf="@id/take_photo_button_hint"
+        app:maxImageSize="48dp"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/pick_photo_button_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/info_pick_photo_button"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/pick_photo_button"
+        app:layout_constraintStart_toStartOf="@id/pick_photo_button"
+        app:layout_constraintTop_toBottomOf="@id/pick_photo_button" />
+
+    <Button
+        android:id="@+id/back_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pick_photo_button_hint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

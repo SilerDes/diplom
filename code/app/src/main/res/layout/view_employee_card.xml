@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/employee_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code_text_view"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/code"
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="9999" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_text_view"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/first_name"
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="Andrew" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname_text_view"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/second_name"
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="Kazbekov" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_text_view"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/Employee_card_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="Доверенный статус" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="100"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_employee"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:drawableLeft="@drawable/ic_edit"
+            android:text="@string/button_edit"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/delete_employee"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawableTint="@color/red"
+            android:text="@string/button_delete"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+</LinearLayout>
